@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine Bouguermouh - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="container">
+            <div class="container-inner">
+
+                <a class="jaz" href="index.html">Jasmine Bouguermouh</a>
+
+                <button onclick="togglePopup()" class="box" id="menuBtn" aria-label="Ouvrir le menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <a href="index.html" class="popup-title">Jasmine Bouguermouh</a>
+
+        <a href="contact.html" class="contact-title">Contact</a>
+
+        <div class="social">
+            <a href="https://www.instagram.com/jasminebrmh/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+    </div>
+</div>
+
+<main class="page-celeb">
+
+    <div class="hero-contact">
+        <img src="contact_img/contact.jpeg"
+        style="--pos-x: 50%; --pos-y: 30%;" 
+        alt="Contact">
+        <div class="hero-contact-text">Contact</div>
+    </div>
+
+   
+   
+    <p class="contact-text">For all questions or job, please use the contact form below.</p>
+
+
+
+
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/mnjyewjw" method="POST">
+
+        <input type="text" name="name" placeholder="Name" required>
+
+        <input type="email" name="email" placeholder="Email" required>
+
+        <textarea name="message" placeholder="Message" required></textarea>
+
+        <button type="submit" id="submit-btn">Send Message</button>
+
+    </form>
+
+   <div class="contact-block">
+
+    <p class="contact-info">Contact :</p>
+
+    <div class="contact-row">
+        <p>Jasmine Bouguermouh</p>
+        <p>@jasminebrmh</p>
+    </div>
+
+    <a class="contact-mail" href="mailto:jasminebgmhpro@outlook.com">
+    jasminebgmhpro@outlook.com
+</a>
+
+</div>
+
+</main>
+
+<footer>
+
+    <div class="social">
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/jasminebrmh/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <p class="copy">© All rights reserved</p>
+
+    </div>
+
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

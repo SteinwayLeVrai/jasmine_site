@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine Bouguermouh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="container">
+            <div class="container-inner">
+
+                <a class="jaz" href="index.html">Jasmine Bouguermouh</a>
+
+                <button onclick="togglePopup()" class="box" id="menuBtn" aria-label="Ouvrir le menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <a href="index.html" class="popup-title">Jasmine Bouguermouh</a>
+
+        <a href="contact.html" class="contact-title">Contact</a>
+
+        <div class="social">
+            <a href="https://www.instagram.com/jasminebrmh/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+    </div>
+
+</div>
+
+<main>
+    <div class="grid">
+
+        <a href="celeb.html" class="card">
+            <img src="celeb_img/chanel.jpeg" 
+            style="--pos-x: 50%; --pos-y: 60%;"
+            alt="">
+            <div class="title">
+                <span class="text">Celebrities and Artists</span>
+                <span class="arrow">
+                    <svg viewBox="0 0 24 24" class="arrow-svg">
+                        <circle cx="12" cy="12" r="11" fill="none" stroke="white" stroke-width="1.5"/>
+                        <path d="M8 12h8M12 8l4 4-4 4"
+                              fill="none"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </div>
+        </a>
+
+        <a href="project.html" class="card">
+            <img src="pers_img/charlotte.png"
+            style="--pos-x: 50%; --pos-y: 10%;"
+            alt="">
+            <div class="title">
+                <span class="text">Personal project</span>
+                <span class="arrow">
+                    <svg viewBox="0 0 24 24" class="arrow-svg">
+                        <circle cx="12" cy="12" r="11" fill="none" stroke="white" stroke-width="1.5"/>
+                        <path d="M8 12h8M12 8l4 4-4 4"
+                              fill="none"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </div>
+        </a>
+
+        <a href="editorial.html" class="card">
+            <img src="edit_img/vanity.png"
+            style="--pos-x: 50%; --pos-y: 55%;"
+            alt="">
+            <div class="title">
+                <span class="text">Editorial</span>
+                <span class="arrow">
+                    <svg viewBox="0 0 24 24" class="arrow-svg">
+                        <circle cx="12" cy="12" r="11" fill="none" stroke="white" stroke-width="1.5"/>
+                        <path d="M8 12h8M12 8l4 4-4 4"
+                              fill="none"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </div>
+        </a>
+
+        <a href="commercial.html" class="card">
+            <img src="com_img/pub.png" alt="">
+            <div class="title">
+                <span class="text">Commercial</span>
+                <span class="arrow">
+                    <svg viewBox="0 0 24 24" class="arrow-svg">
+                        <circle cx="12" cy="12" r="11" fill="none" stroke="white" stroke-width="1.5"/>
+                        <path d="M8 12h8M12 8l4 4-4 4"
+                              fill="none"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </div>
+        </a>
+
+        <a href="pfw.html" class="card">
+            <img src="pfw_img/kartik_7.png"
+            style="--pos-x: 50%; --pos-y: 5%;"
+            alt="">
+            <div class="title">
+                <span class="text">PFW</span>
+                <span class="arrow">
+                    <svg viewBox="0 0 24 24" class="arrow-svg">
+                        <circle cx="12" cy="12" r="11" fill="none" stroke="white" stroke-width="1.5"/>
+                        <path d="M8 12h8M12 8l4 4-4 4"
+                              fill="none"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </div>
+        </a>
+
+    </div>
+</main>
+
+
+<script src="script.js" defer></script>
+</body>
+</html>
