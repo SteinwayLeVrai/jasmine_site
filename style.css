@@ -4,7 +4,7 @@
 }
 
 :root {
-    --media-ratio: 4 / 5; /* ou 3 / 4 si tu préfères plus carré */
+    --media-ratio: 4 / 5;
 }
 
 /* BASE PAGE */
@@ -12,12 +12,8 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: "Lora",sans-serif;
+    font-family: "Lora", sans-serif;
     cursor: default;
-}
-
-footer {
-    padding: 10px 20px;
 }
 
 /* HEADER FIXE */
@@ -184,8 +180,6 @@ footer {
     color: black;
 }
 
-
-
 /* ========================= */
 /* INDEX GRID */
 /* ========================= */
@@ -202,7 +196,6 @@ footer {
     height: 600px;
     overflow: hidden;
     text-decoration: none;
-    white-space: nowrap;
     text-align: center;
 }
 
@@ -213,10 +206,7 @@ footer {
     display: block;
     filter: brightness(60%);
     transition: filter 0.4s ease;
-   /* 🎯 cadrage contrôlé */
     object-position: var(--pos-x, 50%) var(--pos-y, 50%);
-
-    /* 🔥 zoom léger propre */
     transform: scale(var(--zoom, 1));
     transform-origin: center;
 }
@@ -237,6 +227,12 @@ footer {
     font-size: 80px;
     max-width: 90%;
     text-align: center;
+    white-space: nowrap;
+}
+
+.text {
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 .arrow {
@@ -263,12 +259,6 @@ footer {
 .page-celeb {
     margin: 0;
     padding-top: 60px;
-    
-    object-position: var(--pos-x, 50%) var(--pos-y, 50%);
-
-    /*  zoom léger propre */
-    transform: scale(var(--zoom, 1));
-    transform-origin: center;
 }
 
 .hero {
@@ -280,16 +270,12 @@ footer {
     font-family: "Lora", sans-serif;
 }
 
-
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(70%);
-     /*  cadrage contrôlé */
     object-position: var(--pos-x, 50%) var(--pos-y, 50%);
-
-    /*  zoom léger propre */
     transform: scale(var(--zoom, 1));
     transform-origin: center;
 }
@@ -308,7 +294,7 @@ footer {
 .hero-contact {
     position: relative;
     width: 100%;
-    height: 376px; /* IMPORTANT : donne une vraie hauteur */
+    height: 376px;
     overflow: hidden;
 }
 
@@ -316,9 +302,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
     object-position: var(--pos-x, 50%) var(--pos-y, 50%);
-
     transform: scale(var(--zoom, 1));
     transform-origin: center;
 }
@@ -342,12 +326,6 @@ footer {
     text-align: center;
 }
 
-
-.text {
-    white-space: normal;
-    overflow-wrap: break-word;
-}
-
 /* ========================= */
 /* MEDIA SECTION */
 /* ========================= */
@@ -360,7 +338,6 @@ footer {
     padding: 60px 20px 20px 20px;
 }
 
-/* bloc centré */
 .media-block {
     width: 100%;
     max-width: 960px;
@@ -369,10 +346,8 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-top: 0;
 }
 
-/* IMAGE (plus petite que vidéo) */
 .media-block img {
     width: 80%;
     max-width: 640px;
@@ -386,14 +361,13 @@ footer {
     height: auto;
     display: block;
 }
-/* VIDEO */
+
 .media-block video {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* YOUTUBE */
 .media-block iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -402,7 +376,6 @@ footer {
     border-radius: 6px;
 }
 
-/* TITRE */
 .media-title {
     font-size: 15px;
     color: #444444;
@@ -423,7 +396,9 @@ footer {
     color: red;
 }
 
-/* PAGE SUIVANTE */
+/* ========================= */
+/* NAVIGATION BAS DE PAGE */
+/* ========================= */
 
 .card-next {
     position: relative;
@@ -442,14 +417,7 @@ footer {
     height: 100%;
     object-fit: cover;
     display: block;
-    object-position: 16% 16%;
-    transform: scale(2.3);
-    transition: transform 0.4s ease;
-    
-    /*  cadrage contrôlé */
     object-position: var(--pos-x, 50%) var(--pos-y, 50%);
-
-    /*  zoom léger propre */
     transform: scale(var(--zoom, 1));
     transform-origin: center;
 }
@@ -458,15 +426,9 @@ footer {
     filter: brightness(100%);
 }
 
-/* CARD SUIVANTE DUO */
-
 .card-next-duo {
     position: relative;
     display: block;
-    width: 100%;
-    max-width: 480px;
-    height: 200px;
-    margin: 40px auto 0 auto;
     overflow: hidden;
     filter: brightness(80%);
     transition: filter 0.3s ease;
@@ -477,14 +439,7 @@ footer {
     height: 100%;
     object-fit: cover;
     display: block;
-    object-position: 16% 16%;
-    transform: scale(2.3);
-    transition: transform 0.4s ease;
-    
-    /*  cadrage contrôlé */
     object-position: var(--pos-x, 50%) var(--pos-y, 50%);
-
-    /*  zoom léger propre */
     transform: scale(var(--zoom, 1));
     transform-origin: center;
 }
@@ -493,15 +448,9 @@ footer {
     filter: brightness(100%);
 }
 
-/* CARD PREV DUO */
-
 .card-prev-duo {
     position: relative;
     display: block;
-    width: 100%;
-    max-width: 480px;
-    height: 200px;
-    margin: 40px auto 0 auto;
     overflow: hidden;
     filter: brightness(80%);
     transition: filter 0.3s ease;
@@ -512,13 +461,7 @@ footer {
     height: 100%;
     object-fit: cover;
     display: block;
-    object-position: 16% 16%;
-    transform: scale(2.3);
-    transition: transform 0.4s ease;
-     /*  cadrage contrôlé */
     object-position: var(--pos-x, 50%) var(--pos-y, 50%);
-
-    /*  zoom léger propre */
     transform: scale(var(--zoom, 1));
     transform-origin: center;
 }
@@ -530,16 +473,8 @@ footer {
 .card-prev-duo,
 .card-next-duo {
     flex: 1;
-    margin: 0;
-    max-width: none;
+    height: 200px;
 }
-
-.card-prev-duo img,
-.card-next-duo img {
-    display: block;
-}
-
-
 
 .bottom-nav {
     display: flex;
@@ -549,7 +484,30 @@ footer {
     gap: 0;
 }
 
+/* TITRE DES CARTES DE NAVIGATION */
+/* Corrigé : left/right à 0 au lieu de left: 50% pour éviter le débordement */
+.next-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: #ffffff;
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.7),
+        0 0 20px rgba(14, 14, 14, 0.4);
+    font-size: 40px;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+    padding: 0 15px;
+    box-sizing: border-box;
+    filter: brightness(100%);
+}
 
+/* ========================= */
+/* FOOTER */
+/* ========================= */
 
 footer {
     width: 100%;
@@ -577,6 +535,10 @@ footer .social-links {
     color: #888;
 }
 
+/* ========================= */
+/* VIDEO */
+/* ========================= */
+
 .video-wrapper {
     position: relative;
     width: 100%;
@@ -590,22 +552,10 @@ footer .social-links {
     border: none;
 }
 
-.next-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    text-shadow:
-        0 2px 8px rgba(0, 0, 0, 0.7),
-        0 0 20px rgba(14, 14, 14, 0.4);
-    font-size: 40px;
-    text-align: center;
-    white-space: nowrap;
-    filter: brightness(100%);
-}
-
+/* ========================= */
 /* CONTACT */
+/* ========================= */
+
 .contact-form {
     width: 100%;
     max-width: 600px;
@@ -691,34 +641,38 @@ footer .social-links {
 }
 
 .contact-mail:hover {
-    color: red
+    color: red;
 }
-
-
 
 /* ========================= */
 /* RESPONSIVE */
 /* ========================= */
 
 @media (max-width: 870px) {
+
     .hero {
         height: 75vw;
     }
+
     .hero-contact {
         height: 75vw;
     }
+
     .card {
         height: 75vw;
     }
+
     .title {
         font-size: 8vw;
         gap: 10px;
         max-width: 90%;
     }
+
     .arrow-svg {
         width: 40px;
         height: 40px;
     }
+
     .hero-text {
         font-size: 8vw;
         white-space: normal;
@@ -726,18 +680,9 @@ footer .social-links {
         padding: 0 20px;
         width: 100%;
     }
+
     .next-title {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 10px;
-        white-space: normal;
-        padding: 0 8px;
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
+        font-size: 5vw;
     }
 
     .card-next,
@@ -770,8 +715,6 @@ footer .social-links {
 
     .next-title {
         font-size: 29px;
-        white-space: normal;
-        padding: 0 10px;
     }
 }
 
