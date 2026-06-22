@@ -728,6 +728,17 @@ footer .social-links {
     .hero-text {
         font-size: 40px;
     }
+
+    .next-title {
+        font-size: 24px;
+        white-space: normal;
+    }
+
+    .card-next,
+    .card-prev-duo,
+    .card-next-duo {
+        height: 120px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
