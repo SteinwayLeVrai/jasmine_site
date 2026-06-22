@@ -703,7 +703,7 @@ footer .social-links {
 @media (max-width: 870px) {
 
     .hero {
-        height: 75vw; /* garde un format paysage/portrait naturel selon la largeur */
+        height: 75vw;
     }
 
     .hero-contact {
@@ -732,10 +732,9 @@ footer .social-links {
         padding: 0 20px;
         width: 100%;
     }
-}
 
     .next-title {
-        font-size: 24px;
+        font-size: 18px;
         white-space: normal;
         padding: 0 10px;
     }
