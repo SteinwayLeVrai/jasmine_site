@@ -726,8 +726,13 @@ footer .social-links {
     }
 
     .hero-text {
-        font-size: 35px;
+        font-size: 40px;
+        white-space: normal;
+        text-align: center;
+        padding: 0 20px;
+        width: 100%;
     }
+}
 
     .next-title {
         font-size: 24px;
