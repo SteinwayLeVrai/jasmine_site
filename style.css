@@ -766,6 +766,12 @@ footer .social-links {
     .contact-form {
         max-width: 500px;
     }
+
+    .next-title {
+        font-size: 29px;
+        white-space: normal;
+        padding: 0 10px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -780,7 +786,7 @@ footer .social-links {
 
     .hero-contact-text,
     .hero-text {
-        font-size: 48px;
+        font-size: 80px;
     }
 
     .contact-form {
