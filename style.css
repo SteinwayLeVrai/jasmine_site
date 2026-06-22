@@ -700,7 +700,7 @@ footer .social-links {
 /* RESPONSIVE */
 /* ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 870px) {
 
     .hero {
         height: 75vw; /* garde un format paysage/portrait naturel selon la largeur */
@@ -732,12 +732,13 @@ footer .social-links {
     .next-title {
         font-size: 24px;
         white-space: normal;
+        padding: 0 10px;
     }
 
     .card-next,
     .card-prev-duo,
     .card-next-duo {
-        height: 120px;
+        height: 150px;
     }
 }
 
