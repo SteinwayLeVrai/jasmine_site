@@ -701,48 +701,40 @@ footer .social-links {
 /* ========================= */
 
 @media (max-width: 870px) {
-
     .hero {
         height: 75vw;
     }
-
     .hero-contact {
         height: 75vw;
     }
-
     .card {
         height: 75vw;
     }
-
     .title {
-        font-size: 40px;
+        font-size: 8vw;
         gap: 10px;
         max-width: 90%;
     }
-
     .arrow-svg {
         width: 40px;
         height: 40px;
     }
-
     .hero-text {
-        font-size: 35px;
+        font-size: 8vw;
         white-space: normal;
         text-align: center;
         padding: 0 20px;
         width: 100%;
     }
-
     .next-title {
-        font-size: 28px;
+        font-size: 5vw;
         white-space: normal;
         padding: 0 10px;
     }
-
     .card-next,
     .card-prev-duo,
     .card-next-duo {
-        height: 150px;
+        height: 120px;
     }
 }
 
