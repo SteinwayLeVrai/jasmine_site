@@ -727,10 +727,19 @@ footer .social-links {
         width: 100%;
     }
     .next-title {
-        font-size: 5vw;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 4vw;
         white-space: normal;
-        padding: 0 10px;
+        padding: 0 15px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
     }
+
     .card-next,
     .card-prev-duo,
     .card-next-duo {
